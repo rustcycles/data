@@ -17,4 +17,4 @@ jobs:
 
       # All paths should be lowercase or we might have issues
       # when switching between case-sensitive and case-insensitive systems such as Linux and Windows.
-      - run: '! ( find . ! -name README.md | grep [A-Z] && echo "Asset names/paths must be all lowercase" )'
+      - run: '! ( find . -not -name README.md -not -path "./.git/*" | grep [A-Z] && echo "Asset names/paths must be all lowercase" )'
