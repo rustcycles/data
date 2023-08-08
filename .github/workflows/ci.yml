@@ -13,7 +13,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-	  - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       # All paths should be lowercase or we might have issues
       # when switching between case-sensitive and case-insensitive systems such as Linux and Windows.
